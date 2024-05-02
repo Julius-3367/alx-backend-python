@@ -13,4 +13,7 @@ zoom_2x = zoom_array(array)
 
 zoom_3x = zoom_array(array, 3)
 
+# Added type annotations for zoom_2x and zoom_3x
+zoom_2x: List[int] = zoom_array(array)
+zoom_3x: List[int] = zoom_array(array, 3)
 
