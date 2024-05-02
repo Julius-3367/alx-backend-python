@@ -1,19 +1,15 @@
 #!/usr/bin/env python3
 """
-This is a module that provides a function for concatenating two strings.
+Basic Annotations - concat
+Write type-annotated function concat that takes two strings as argument
+Returns a concatenated string
 """
 
 
 def concat(str1: str, str2: str) -> str:
     """
-    This function concatenates two strings and returns the result.
-
-    Parameters:
-    str1 (str): The first string.
-    str2 (str): The second string.
-
-    Returns:
-    str: The concatenation of str1 and str2.
+    Type annotated function
+    Concat
     """
     return str1 + str2
 
