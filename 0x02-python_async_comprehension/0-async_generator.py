@@ -1,8 +1,17 @@
+#!/usr/bin/env python3
+"""
+A module for asynchronous tasks using asyncio.
+"""
+
 import asyncio
 import random
 
-async def async_generator():
-    for _ in range(10):
-        await asyncio.sleep(1)
-        yield random.uniform(0, 10)
 
+async def wait_random(max_delay: int = 10) -> float:
+    """
+    Wait for a random amount of time up to `max_delay` seconds.
+    Returns the amount of time waited.
+    """
+    wait_time = random.random() * max_delay
+    await asyncio.sleep(wait_time)
+    return wait_time
